@@ -30,7 +30,6 @@ body {
 	margin: -8px auto -8px auto;
 	background: rgba(255, 255, 255, 0.9);
 	height: auto;
-	padding: 0;
 	max-width: 80%;
 }
 
@@ -60,19 +59,29 @@ span {
 	max-height: 350px;
 }
 
+.div-container {
+	display: flex;
+}
+
+#navbar-section {
+	width: 30%;
+	margin: 50px 50px 0 20px;
+}
+
 #navbar {
 	display: flex;
 	flex-direction: column;
-	max-width: 20%;
+	max-width: 100%;
+	max-height: 380px;
 	margin: 10px 20px 20px 30px;
-	position: absolute;
-	top: 290px;
+	overflow-y: scroll;
 }
 
 #subheading {
 	margin: 0 0 15px 40px;
 	font-size: 1.4em;
 	font-weight: bold;
+	text-align: left;
 }
 
 ul {
@@ -83,17 +92,17 @@ li {
 	margin-top: 10px;
 }
 
-
 #sub-div {
-	max-width: 80%;
-	margin: -10px 50px 50px 400px;
+	flex: auto;
+	max-width: 60%;
+	margin: 20px 30px 20px 30px;
 }
 
 p {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 90%;
-	margin: 0px 00px 10px 0;
+	margin: 0px 0 10px 0;
 }
 
 .main-section header {
@@ -113,6 +122,328 @@ p {
 	position: absolute;
 	left: 0;
 	top: 0;
-	height: 100%;
-	width: 100%;
+	height: 80%;
+	width: 80%;
+}
+
+#caption {
+	font-style: italic;
+	font-size: .8em;
+	margin-top: -10%;
+}
+
+/* 1st media query */
+@media (min-width: 1100px) and (max-width: 1360px) {
+	#main-doc {
+		display: flex;
+		flex-direction: column;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 1em;
+		line-height: 30px;
+		margin: -8px auto -8px auto;
+		background: rgba(255, 255, 255, 0.9);
+		height: auto;
+		max-width: 80%;
+	}
+
+	#main-div {
+		display: flex;
+		flex-wrap: wrap;
+		font-family: 'Paytone One', sans-serif;
+		padding-top: 10px;
+		margin: 20px 100px 32px 380px;
+		line-height: 2.7em;
+		font-size: 1.3em;
+		max-width: 60%;
+	}
+
+
+	#crypto-unicorns-logo {
+		max-width: 300px;
+		max-height: 300px;
+	}
+
+	#navbar-section {
+		width: 30%;
+		margin: 50px 50px 0 20px;
+	}
+
+	#navbar {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+		max-height: 380px;
+		margin: 10px 20px 20px 30px;
+		overflow-y: scroll;
+	}
+
+	#subheading {
+		margin: 0 0 15px 40px;
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+
+	#sub-div {
+		max-width: 60%;
+		margin: 20px 30px 20px 30px;
+	}
+
+	p {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 90%;
+		margin: 0px 0 10px 0;
+	}
+
+	.main-section header {
+		font-weight: bold;
+		margin-top: 30px;
+		font-size: 1.15em;
+	}
+
+	#trailer {
+		overflow: hidden;
+		padding-bottom: 56.25%;
+		position: relative;
+		height: 0;
+		margin-top: 20px;
+	}
+}
+
+/* 2nd media query */
+@media (min-width: 690px) and (max-width: 1100px) {
+	html {
+		height: 100%;
+	}
+
+	body {
+		background-image: url("https://cryptounicorns.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fcf97d24f-d976-4f9d-bbc7-ce2f48b91af8%2FCountdown_EggBackground_Scene.png?table=block&id=c40bd60c-bfdf-4d11-a859-597b4b9439e1&spaceId=c0c9f236-25ec-47e0-aad5-719266dc8969&width=2000&userId=&cache=v2");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+		min-height: 100%;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#main-doc {
+		font-family: 'Quicksand', sans-serif;
+		font-size: 1em;
+		line-height: 25px;
+		background: rgba(255, 255, 255, 0.9);
+		height: auto;
+		max-width: 70%;
+	}
+
+	#main-div {
+		display: flex;
+		flex-wrap: wrap;
+		font-family: 'Paytone One', sans-serif;
+		padding-top: 10px;
+		margin: 50px auto 0 auto;
+		line-height: 2.7em;
+		font-size: 1.3em;
+		max-width: 80%;
+	}
+
+	span {
+		font-weight: lighter;
+		font-size: .8em;
+	}
+
+	#crypto-unicorns-logo {
+		max-width: 0;
+	}
+
+	.div-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#navbar-section {
+		display: flex;
+		flex-direction: column;
+		margin: 50px auto 0 auto;
+		width: 80%;
+	}
+
+	#navbar {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+		max-height: 280px;
+		margin: 10px 20px 20px 30px;
+		overflow-y: scroll;
+	}
+
+	ul {
+		padding: 0 2px 0 40px;
+	}
+
+	#subheading {
+		margin: 0 0 15px 40px;
+		text-align: center;
+		font-size: 1.4em;
+		font-weight: bold;
+	}
+
+	#sub-div {
+		max-width: 80%;
+		margin: 0 auto 20px auto;
+	}
+
+	p {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 90%;
+		margin: 0px 0 10px 0;
+	}
+
+	.main-section header {
+		font-weight: bold;
+		margin-top: 30px;
+		font-size: 1.2em;
+	}
+
+	#trailer {
+		overflow: hidden;
+		padding-bottom: 56.25%;
+		position: relative;
+		height: 0;
+	}
+
+	#trailer iframe {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 90%;
+		width: 90%;
+	}
+
+	#caption {
+		font-style: italic;
+		font-size: .8em;
+		margin-top: -5%;
+	}
+}
+
+/* 3rd media query */
+@media (max-width: 690px) {
+	html {
+		height: 100%;
+	}
+
+	body {
+		background-image: url("https://cryptounicorns.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fcf97d24f-d976-4f9d-bbc7-ce2f48b91af8%2FCountdown_EggBackground_Scene.png?table=block&id=c40bd60c-bfdf-4d11-a859-597b4b9439e1&spaceId=c0c9f236-25ec-47e0-aad5-719266dc8969&width=2000&userId=&cache=v2");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+		min-height: 100%;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#main-doc {
+		font-family: 'Quicksand', sans-serif;
+		font-size: 1em;
+		line-height: 25px;
+		background: rgba(255, 255, 255, 0.9);
+		height: auto;
+		max-width: 80%;
+	}
+
+	#main-div {
+		display: flex;
+		flex-wrap: wrap;
+		font-family: 'Paytone One', sans-serif;
+		padding-top: 10px;
+		margin: 20px auto 0 auto;
+		line-height: 2.5em;
+		font-size: 1em;
+		max-width: 80%;
+	}
+
+	#crypto-unicorns-logo {
+		max-width: 0;
+	}
+
+	.div-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#navbar-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 30px auto 0 auto;
+		width: 90%;
+	}
+
+	#navbar {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+		max-height: 160px;
+		margin: 10px 20px 20px 30px;
+		overflow-y: scroll;
+	}
+
+	ul {
+		padding: 0 2px 0 20px;
+	}
+
+	#subheading {
+		margin: 0 0 15px 0;
+		font-size: 1.4em;
+		font-weight: bold;
+	}
+
+	#sub-div {
+		max-width: 80%;
+		margin: 0 auto 20px auto;
+	}
+
+	p {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 90%;
+		margin: 0px 0 10px 0;
+		font-size: 0.9em;
+	}
+
+	.main-section header {
+		font-weight: bold;
+		margin-top: 30px;
+		font-size: 1.2em;
+	}
+
+	#trailer {
+		overflow: hidden;
+		padding-bottom: 56.25%;
+		position: relative;
+		height: 0;
+	}
+
+	#trailer iframe {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+	}
+
+	#caption {
+		font-style: italic;
+		font-size: .8em;
+		margin-top: 0;
+	}
 }
