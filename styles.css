@@ -341,7 +341,7 @@ p {
 		background-image: url("https://cryptounicorns.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fcf97d24f-d976-4f9d-bbc7-ce2f48b91af8%2FCountdown_EggBackground_Scene.png?table=block&id=c40bd60c-bfdf-4d11-a859-597b4b9439e1&spaceId=c0c9f236-25ec-47e0-aad5-719266dc8969&width=2000&userId=&cache=v2");
 		background-repeat: no-repeat;
 		background-attachment: fixed;
-		background-size: cover;
+		background-size: auto;
 		background-position: center;
 		min-height: 100%;
 	}
