@@ -92,6 +92,16 @@ li {
 	margin-top: 10px;
 }
 
+li > a {
+	text-decoration: none;
+	color:rgba(122, 118, 118);
+	transition: 500ms;
+}
+
+li > a:hover {
+	color: blue;
+}
+
 #sub-div {
 	flex: auto;
 	max-width: 60%;
